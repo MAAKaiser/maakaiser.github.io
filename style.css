@@ -68,7 +68,7 @@ header {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding: 3rem 0.5rem;
   gap: 3rem;
   flex-wrap: wrap;
 }
