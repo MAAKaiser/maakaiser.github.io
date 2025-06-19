@@ -1,7 +1,104 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
   color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */
+header {
+  background-color: #004080;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #0066cc;
+}
+
+/* Main container for home page */
+.home-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Profile image */
+.profile-image img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Text next to the image */
+.profile-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.profile-text h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: #004080;
+}
+
+.profile-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
+}
+
+/* Social links */
+.social-links a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links span {
+  color: #666;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: #fff;
   text-align: center;
-  margin-top: 50px;
+  padding: 1rem 0;
+  margin-top: auto;
+  font-size: 0.9rem;
 }
