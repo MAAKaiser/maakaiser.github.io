@@ -129,11 +129,13 @@ h1 {
   margin-bottom: 1rem;
 }
 
+/* Sub-section headings */
 .content-container h2 {
   margin-top: 2rem;
-  color: #003366; /* UW-Madison red */
+  color: #003366; /* Wisconsin dark blue */
   border-bottom: 2px solid #003366;
   padding-bottom: 0.3rem;
+  font-size: 1.5rem;
 }
 
 .content-container ol {
