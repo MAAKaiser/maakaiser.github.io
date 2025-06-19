@@ -142,15 +142,17 @@ header {
 }
 
 /* Footer */
+/* Footer */
 footer {
-  background-color: #C5050C;
+  background-color: #C5050C; /* UW Madison red */
   color: white;
   text-align: center;
-  padding: 1rem 0;
-  font-size: 0.95rem;
-  font-weight: 600;
+  padding: 0.5rem 0; /* Reduced height */
+  font-size: 0.8rem;  /* Smaller text */
+  font-weight: 500;   /* Slightly lighter */
   margin-top: auto;
 }
+
 
 /* Section Headings */
 h1 {
