@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+p,
+li {
+  text-align: justify;
+}
+
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
