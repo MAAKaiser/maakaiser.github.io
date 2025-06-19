@@ -106,14 +106,22 @@ header {
 }
 
 .social-links a {
-  color: #C5050C;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3399ff; /* light blue */
   font-weight: 600;
   text-decoration: none;
   font-size: 0.95rem;
+  margin-bottom: 0.5rem;
 }
 
 .social-links a:hover {
   text-decoration: underline;
+}
+
+.social-links i {
+  font-size: 1rem;
 }
 
 .social-links span {
