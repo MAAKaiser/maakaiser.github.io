@@ -18,7 +18,7 @@ body {
 /* Header and navigation */
 header {
   background-color: #FFFFFF; /* white */
-  border-bottom: 3px solid #C5050C; /* UW Madison red underline */
+  border-bottom: 2px solid #C5050C; /* UW Madison red underline */
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
