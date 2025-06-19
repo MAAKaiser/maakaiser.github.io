@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -8,80 +8,91 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #FFFFFF; /* white background */
+  color: #333333; /* dark gray text */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Header styles */
+/* Header and navigation */
 header {
-  background-color: #004080;
+  background-color: #FFFFFF; /* white */
+  border-bottom: 3px solid #C5050C; /* UW Madison red underline */
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  font-weight: 600;
 }
 
 .nav-links li a {
-  color: #fff;
+  color: #000000; /* black */
   text-decoration: none;
-  font-weight: 600;
-  padding: 0.3rem 0.6rem;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
-  background-color: #0066cc;
+  border-bottom-color: #C5050C; /* red underline on hover and active */
+  color: #C5050C;
 }
 
-/* Main container for home page */
+/* Main content container */
 .home-container {
-  max-width: 1000px;
-  margin: 2rem auto;
+  max-width: 960px;
+  margin: 2.5rem auto 4rem;
   padding: 0 1rem;
   display: flex;
-  gap: 2rem;
-  align-items: center;
+  gap: 3rem;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
-/* Profile image */
+/* Profile image styling */
 .profile-image img {
-  max-width: 250px;
+  max-width: 280px;
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(197, 5, 12, 0.25); /* subtle red shadow */
 }
 
-/* Text next to the image */
+/* Text area */
 .profile-text {
   flex: 1;
-  min-width: 280px;
+  min-width: 320px;
 }
 
 .profile-text h1 {
-  margin-bottom: 0.5rem;
-  font-size: 2.5rem;
-  color: #004080;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #C5050C; /* UW Madison red */
+  line-height: 1.1;
 }
 
 .profile-text p {
-  margin-bottom: 1.5rem;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #444444;
 }
 
 /* Social links */
 .social-links a {
-  color: #004080;
-  text-decoration: none;
+  color: #C5050C;
   font-weight: 600;
+  text-decoration: none;
+  margin-right: 1.2rem;
+  font-size: 1rem;
 }
 
 .social-links a:hover {
@@ -89,16 +100,18 @@ header {
 }
 
 .social-links span {
-  color: #666;
+  color: #666666;
   font-style: italic;
+  font-size: 1rem;
 }
 
 /* Footer */
 footer {
-  background-color: #004080;
-  color: #fff;
+  background-color: #C5050C; /* UW Madison red */
+  color: white;
   text-align: center;
   padding: 1rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
   margin-top: auto;
-  font-size: 0.9rem;
 }
