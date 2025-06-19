@@ -55,21 +55,57 @@ header {
 
 /* Main content container */
 .home-container {
-  max-width: 960px;
-  margin: 2.5rem auto 4rem;
-  padding: 0 1rem;
   display: flex;
-  gap: 3rem;
+  flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
+  padding: 3rem 1rem;
+  gap: 3rem;
   flex-wrap: wrap;
 }
 
-/* Profile image styling */
-.profile-image img {
-  max-width: 280px;
-  width: 100%;
-  border-radius: 6px;
-  box-shadow: 0 6px 12px rgba(197, 5, 12, 0.25); /* subtle red shadow */
+.profile-left {
+  max-width: 250px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #C5050C; /* Optional: UW red outline */
+  margin-bottom: 1rem;
+}
+
+.profile-left h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  color: #003366;
+}
+
+.social-links a {
+  color: #C5050C;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.profile-right {
+  flex: 1;
+  max-width: 600px;
+}
+
+.profile-right h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.profile-right p {
+  text-align: justify;
+  line-height: 1.7;
 }
 
 /* Text area */
