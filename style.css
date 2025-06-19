@@ -122,6 +122,12 @@ footer {
   margin-top: auto;
 }
 
+/* Publications title (keep black as default) */
+h1 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
 .content-container h2 {
   margin-top: 2rem;
