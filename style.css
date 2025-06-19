@@ -115,3 +115,26 @@ footer {
   font-weight: 600;
   margin-top: auto;
 }
+
+
+.content-container h2 {
+  margin-top: 2rem;
+  color: #C5050C; /* UW-Madison red */
+  border-bottom: 2px solid #C5050C;
+  padding-bottom: 0.3rem;
+}
+
+.content-container ol {
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+
+.content-container ol li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.content-container ol li strong {
+  color: #C5050C;
+}
