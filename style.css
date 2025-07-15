@@ -135,7 +135,7 @@ header {
 /* Right content */
 .profile-right {
   flex: 1;
-  max-width: none; /* was 600px */
+  max-width: none;
 }
 
 .profile-right h1,
