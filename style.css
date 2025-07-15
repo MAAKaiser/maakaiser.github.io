@@ -67,7 +67,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start; /* was center */
   padding: 1.5rem 0.5rem;
   gap: 3rem;
   flex-wrap: wrap;
@@ -133,7 +133,7 @@ header {
 /* Right content */
 .profile-right {
   flex: 1;
-  max-width: 1000px;
+  max-width: none; /* was 600px */
 }
 
 .profile-right h1,
