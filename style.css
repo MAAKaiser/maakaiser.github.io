@@ -173,6 +173,12 @@ h1 {
   line-height: 1.5;
 }
 
+.content-wrapper {
+  max-width: none;      /* no max width */
+  width: 100%;          /* full width */
+  padding: 3rem 3rem;   /* padding all around */
+  margin: 0 auto;       /* center if needed */
+}
 .content-container ol li strong {
   color: #006d6d;
 }
