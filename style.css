@@ -71,7 +71,7 @@ header {
   gap: 3rem;
   padding: 1.5rem 2rem;
   width: 100%;
-  max-width: 1400px;
+  max-width: none;
   margin: 0 auto;
 }
 
@@ -134,7 +134,7 @@ header {
 
 /* Right content */
 .profile-right {
-  flex: 1;
+  flex: 2;
   max-width: none;
 }
 
