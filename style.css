@@ -65,12 +65,14 @@ header {
 /* Homepage layout */
 .home-container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start; /* was center */
-  padding: 1.5rem 0.5rem;
-  gap: 3rem;
   flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .content-wrapper {
