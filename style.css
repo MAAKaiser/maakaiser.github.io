@@ -1,10 +1,11 @@
-/* Reset */
+/* RESET: remove default browser spacing and simplify box sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY: general font, layout, background */
 body {
   font-family: 'Helvetica', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -15,7 +16,7 @@ body {
   flex-direction: column;
 }
 
-/* Text elements */
+/* PARAGRAPHS & LISTS: justified text, consistent sizing */
 p, li {
   text-align: justify;
 }
@@ -29,7 +30,7 @@ li {
   font-size: 1rem;
 }
 
-/* Header and navigation */
+/* HEADER & NAVIGATION */
 header {
   background-color: #FFFFFF;
   border-bottom: 2px solid #C5050C;
@@ -39,6 +40,7 @@ header {
   z-index: 100;
 }
 
+/* NAVIGATION LINKS */
 .nav-links {
   list-style: none;
   display: flex;
@@ -61,18 +63,18 @@ header {
   color: #C5050C;
 }
 
-/* Homepage layout */
+/* HOMEPAGE FLEX LAYOUT */
 .home-container {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: flex-start; /* no centering */
+  justify-content: flex-start;
   gap: 3rem;
-  padding: 2rem 3rem; /* more left-right breathing */
+  padding: 2rem 3rem;
   width: 100%;
 }
 
-/* Left side profile */
+/* PROFILE LEFT COLUMN (IMAGE + LINKS) */
 .profile-left {
   width: 220px;
   text-align: center;
@@ -93,6 +95,7 @@ header {
   color: #003366;
 }
 
+/* SOCIAL LINKS BELOW PROFILE PIC */
 .social-links {
   display: flex;
   flex-direction: column;
@@ -103,7 +106,7 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #3399ff; /* light blue */
+  color: #3399ff;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.95rem;
@@ -118,10 +121,10 @@ header {
   font-size: 1rem;
 }
 
-/* Right content */
+/* RIGHT PROFILE TEXT / MAIN CONTENT */
 .profile-right {
   flex: 1;
-  min-width: 0; /* ensures flex grows properly */
+  min-width: 0;
 }
 
 .profile-right h1 {
@@ -137,7 +140,7 @@ header {
   color: #444444;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   background-color: #C5050C;
   color: white;
@@ -148,48 +151,45 @@ footer {
   margin-top: auto;
 }
 
-/* Section Headings */
+/* HEADINGS: H1 for page titles */
 h1 {
   color: #000000;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.content-container h2 {
-  margin-top: 2rem;
-  color: #003366;
-  border-bottom: 2px solid #003366;
-  padding-bottom: 0.5rem; /* space between text and line */
-  margin-bottom: 2rem;    /* space between line and content */
-  font-size: 1.5rem;
-  display: inline-block;  /* ensures padding & margin apply cleanly with border */
-}
-
+/* H2 for section headings with underline & spacing */
 h2 {
   margin-top: 2rem;
-  margin-bottom: 1rem; /* space between line and list */
+  margin-bottom: 1rem; /* spacing below underline */
   color: #003366;
   border-bottom: 2px solid #003366;
   padding-bottom: 0.3rem;
   font-size: 1.5rem;
 }
 
-/* Publications list */
-.content-container ol {
+/* SPECIFIC: content-container lists (publications) */
+.content-container ol,
+.content-wrapper ol {
   margin-left: 1.5rem;
 }
 
-.content-container ol li {
+.content-container ol li,
+.content-wrapper ol li {
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 
-.content-wrapper {
-  max-width: none;      /* no max width */
-  width: 100%;          /* full width */
-  padding: 3rem 3rem;   /* padding all around */
-  margin: 0 auto;       /* center if needed */
-}
-.content-container ol li strong {
+/* HIGHLIGHT AUTHOR NAME IN PUBLICATIONS */
+.content-container ol li strong,
+.content-wrapper ol li strong {
   color: #006d6d;
+}
+
+/* GENERAL PAGE WRAPPER FOR PAGES LIKE PUBLICATIONS */
+.content-wrapper {
+  max-width: none;
+  width: 100%;
+  padding: 3rem 3rem;
+  margin: 0 auto;
 }
