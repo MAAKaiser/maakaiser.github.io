@@ -194,20 +194,25 @@ h2 {
   margin: 0 auto;
 }
 
-.research-block {
+.figure-text-row {
   display: flex;
-  align-items: flex-start;
-  gap: 2rem; /* space between image and text */
-  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
-.research-block img {
-  width: 300px;
+.figure-text-row img {
+  width: 100%;
+  max-width: 400px; /* adjust as you like */
   height: auto;
   flex-shrink: 0;
 }
 
-.research-block p {
+.figure-text-row p {
   flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
 }
+
 
