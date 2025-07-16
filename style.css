@@ -176,7 +176,7 @@ h2 {
 
 .content-container ol li,
 .content-wrapper ol li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   line-height: 1.5;
 }
 
