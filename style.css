@@ -157,12 +157,14 @@ h1 {
 
 .content-container h2 {
   margin-top: 2rem;
-  margin-bottom: 1.5rem;               /* increases space after the underline */
   color: #003366;
   border-bottom: 2px solid #003366;
-  padding-bottom: 0.8rem;             /* increases space between text and underline */
+  padding-bottom: 0.5rem; /* space between text and line */
+  margin-bottom: 2rem;    /* space between line and content */
   font-size: 1.5rem;
+  display: inline-block;  /* ensures padding & margin apply cleanly with border */
 }
+
 
 /* Publications list */
 .content-container ol {
