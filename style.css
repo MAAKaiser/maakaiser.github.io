@@ -193,3 +193,21 @@ h2 {
   padding: 3rem 3rem;
   margin: 0 auto;
 }
+
+.research-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem; /* space between image and text */
+  margin-bottom: 2rem;
+}
+
+.research-block img {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.research-block p {
+  flex: 1;
+}
+
