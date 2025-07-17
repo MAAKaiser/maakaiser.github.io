@@ -204,7 +204,7 @@ h2 {
 
 .figure-text-row img {
   width: 100%;
-  max-width: 400px; /* adjust as you like */
+  max-width: 600px; /* adjust as you like */
   height: auto;
   flex-shrink: 0;
 }
