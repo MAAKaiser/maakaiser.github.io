@@ -45,10 +45,14 @@
   <div class="figure-text-row">
     <img src="Images/fig_p2m.png" alt="Neuromorphic In-Pixel Diagram">
     <p>
-      This research explores a novel approach to processing-in-pixel-in-memory (P<sup>2</sup>M) architectures 
-      using magnetic tunnel junctions (MTJs) integrated directly within the pixel array of a neuromorphic vision sensor.
-      Our system enables ultra-low-latency and energy-efficient computation directly within the sensor, making it well-suited for always-on smart edge applications. 
-      By leveraging non-volatile memory elements and minimal peripheral circuitry, we demonstrate programmable, high-accuracy neuromorphic vision pipelines capable of motion detection and object segmentation.
+      Modern vision systems often rely on separate sensor and processor units, leading to significant energy and latency overheads during data transmission. 
+      This separation limits real-time performance and scalability, especially in edge AI applications where power and area budgets are tight.
+      We propose a hybrid CMOS+X neuromorphic processing-in-pixel-in-memory (P<sup>2</sup>M) architecture integrating domain-wall magnetic tunnel junctions (MDW-MTJs) directly with CMOS transistors. 
+      This enables massively parallel, in-pixel processing of spiking CNNs through asynchronous, event-driven multiply-and-accumulate operations.
+      Our design encodes weights using MDW-MTJ resistance states and transistor geometry, enabling programmable thresholds, long integration times, and energy-efficient computation. 
+      A 3D-stacked layout with fine-pitch Cu-Cu bonding allows dense vertical integration without area overhead.
+      This work demonstrates a scalable and efficient in-sensor computing approach, achieving near state-of-the-art accuracy on neuromorphic benchmarks while reducing backend processing energy by over 45%. 
+      It highlights the potential for smart sensors with embedded spiking neural inference.
     </p>
   </div>
 </section>
