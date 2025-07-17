@@ -24,6 +24,8 @@ p, li {
 p {
   line-height: 1.7;
   font-size: 1rem;
+  margin-top: 0.5rem;    /* added */
+  margin-bottom: 0.5rem; /* added */
 }
 
 li {
@@ -160,7 +162,7 @@ h1 {
 
 /* H2 for section headings with underline & spacing */
 h2 {
-  margin-top: 2rem;
+  margin-top: 1.5rem; /* reduced from 2rem */
   margin-bottom: 1rem; /* spacing below underline */
   color: #003366;
   border-bottom: 2px solid #003366;
@@ -194,12 +196,19 @@ h2 {
   margin: 0 auto;
 }
 
+/* SECTION spacing adjustment */
+section {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .figure-text-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
   margin-top: 1rem;
+  margin-bottom: 1rem; /* added for consistent spacing */
 }
 
 .figure-text-row img {
@@ -213,6 +222,5 @@ h2 {
   flex: 1;
   font-size: 1rem;
   line-height: 1.6;
+  margin: 0; /* remove paragraph default margin inside figure-text-row */
 }
-
-
