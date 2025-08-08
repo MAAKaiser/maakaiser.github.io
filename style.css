@@ -230,3 +230,20 @@ section {
   line-height: 1.5;      /* controls spacing between lines */
 }
 
+/* Base link style */
+a {
+  color: #444;        /* dark gray, softer than black */
+  text-decoration: none; /* removes underline */
+}
+
+/* On hover, make it stand out */
+a:hover {
+  color: #000;        /* pure black on hover */
+  text-decoration: underline; /* underline only on hover */
+}
+
+a:visited {
+  color: #444;
+}
+
+
