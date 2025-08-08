@@ -270,8 +270,8 @@ a:visited {
 
 .news-section {
   margin-top: 20px;
-  padding-left: 20px; /* aligns with profile text */
-  max-width: 700px;   /* keeps it from stretching too wide */
+  padding-left: 20px;  /* aligns with profile text */
+  max-width: 700px;    /* prevents over-stretching */
 }
 
 .news-section h2 {
@@ -281,10 +281,16 @@ a:visited {
 .news-section ul {
   list-style-type: none;
   padding-left: 0;
+  margin-left: 0;
 }
 
 .news-section li {
   margin-bottom: 8px;
+}
+
+.news-section a {
+  text-decoration: none;
+  color: #004466;
 }
 
 
