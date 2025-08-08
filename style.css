@@ -283,7 +283,7 @@ a:visited {
 .news-section {
   margin-top: 20px;
   padding-left: 0;      /* remove left padding */
-  margin-left: -10px;   /* nudge left */
+  margin-left: 20px;   /* nudge left */
   max-width: 1200px;
 }
 
