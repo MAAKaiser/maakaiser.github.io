@@ -204,17 +204,22 @@ section {
 
 .figure-text-row {
   display: flex;
-  align-items: flex-start; /* top-align image with text */
-  gap: 1rem; /* space between image and text */
+  flex-wrap: wrap; /* allow vertical stacking on narrow screens */
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .figure-text-row img {
-  max-width: 300px; /* control image size */
+  flex-shrink: 0; /* prevent image from shrinking too much */
+  max-width: 300px; /* controls image size */
+  width: 100%;
   height: auto;
 }
 
-.figure-text-row .text-block {
+.text-block {
+  flex: 1; /* take remaining space */
+  min-width: 250px; /* prevents collapsing */
   display: flex;
-  flex-direction: column; /* stack paragraphs vertically */
+  flex-direction: column;
   gap: 1rem;
 }
