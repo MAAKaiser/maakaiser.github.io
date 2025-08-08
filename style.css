@@ -22,7 +22,7 @@ p, li {
 }
 
 p {
-  line-height: 1.7;
+  line-height: 1.6;
   font-size: 1rem;
   margin-top: 0.5rem;    /* added */
   margin-bottom: 0.5rem; /* added */
@@ -179,7 +179,7 @@ h2 {
 .content-container ol li,
 .content-wrapper ol li {
   margin-bottom: 0.5rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* HIGHLIGHT AUTHOR NAME IN PUBLICATIONS */
@@ -204,7 +204,7 @@ section {
 
 .figure-text-row {
   display: flex;
-  flex-wrap: wrap; /* allow vertical stacking on narrow screens */
+  flex-wrap: wrap;           /* allow vertical stacking on narrow screens */
   align-items: flex-start;
   gap: 1rem;
 }
@@ -227,7 +227,7 @@ section {
 .figure-text-row .text-block p {
   margin-top: 0.05rem;   /* space above each paragraph */
   margin-bottom: 0.05rem; /* space below each paragraph */
-  line-height: 1.5;      /* controls spacing between lines */
+  line-height: 1.6;      /* controls spacing between lines */
 }
 
 /* Base link style */
