@@ -232,18 +232,18 @@ section {
 
 /* Base link style */
 a {
-  color: #444;        /* dark gray, softer than black */
-  text-decoration: none; /* removes underline */
+  color: #777;                         /* dark gray, softer than black */
+  text-decoration: none;               /* removes underline */
 }
 
 /* On hover, make it stand out */
 a:hover {
-  color: #000;        /* pure black on hover */
-  text-decoration: underline; /* underline only on hover */
+  color: #000;                        /* pure black on hover */
+  text-decoration: underline;         /* underline only on hover */
 }
 
 a:visited {
-  color: #444;
+  color: #777;
 }
 
 
