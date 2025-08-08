@@ -232,7 +232,7 @@ section {
 
 /* Base link style */
 a {
-  color: #777;                         /* dark gray, softer than black */
+  color: #004466;                      /* dark gray, softer than black */
   text-decoration: none;               /* removes underline */
 }
 
@@ -243,7 +243,7 @@ a:hover {
 }
 
 a:visited {
-  color: #777;
+  color: #004466;
 }
 
 
