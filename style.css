@@ -105,6 +105,18 @@ header {
 }
 
 .social-links a {
+  color: #004466;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* .social-links a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -117,7 +129,7 @@ header {
 
 .social-links a:hover {
   text-decoration: underline;
-}
+} */
 
 .social-links i {
   font-size: 1rem;
@@ -289,10 +301,3 @@ a:visited {
 .news-section li {
   margin-bottom: 8px;
 }
-
-
-
-
-
-
-
