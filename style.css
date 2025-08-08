@@ -205,7 +205,7 @@ section {
 .figure-text-row {
   display: flex;
   flex-wrap: wrap;           /* allow vertical stacking on narrow screens */
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
 }
 
