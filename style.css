@@ -246,6 +246,29 @@ a:visited {
   color: #004466;
 }
 
+.news-item {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+}
+
+.news-date {
+  flex: 0 0 8em; /* fixed width for alignment */
+  font-weight: bold;
+}
+
+.news-content {
+  flex: 1;
+  display: inline-flex;
+  align-items: center; /* aligns icon and text */
+  gap: 0.5rem;
+}
+
+.news-icon {
+  flex-shrink: 0; /* ensures icon doesn't shrink */
+}
+
+
 
 
 
