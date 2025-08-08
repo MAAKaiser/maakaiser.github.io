@@ -268,6 +268,26 @@ a:visited {
   flex-shrink: 0; /* ensures icon doesn't shrink */
 }
 
+.news-section {
+  margin-top: 20px;
+  padding-left: 20px; /* aligns with profile text */
+  max-width: 700px;   /* keeps it from stretching too wide */
+}
+
+.news-section h2 {
+  margin-bottom: 10px;
+}
+
+.news-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.news-section li {
+  margin-bottom: 8px;
+}
+
+
 
 
 
