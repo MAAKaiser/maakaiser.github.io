@@ -223,3 +223,10 @@ section {
   flex-direction: column;
   gap: 1rem;
 }
+
+.figure-text-row .text-block p {
+  margin-top: 0.5rem;   /* space above each paragraph */
+  margin-bottom: 0.5rem; /* space below each paragraph */
+  line-height: 1.5;      /* controls spacing between lines */
+}
+
