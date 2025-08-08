@@ -296,9 +296,13 @@ a:visited {
 }
 
 .news-section a:hover {
-  text-decoration: underline;
+  color: #000000;                        /* pure black on hover */
+  text-decoration: underline;           /* underline only on hover */
 }
 
+.news-section a:visited {
+  color: #004466;
+}
 
 
 
