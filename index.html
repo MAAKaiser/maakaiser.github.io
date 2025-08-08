@@ -85,6 +85,32 @@
   </div>
 </main>
 
+<section class="news-preview">
+  <h2>Recent News</h2>
+  <ul id="news-list"></ul>
+  <p><a href="news.html">See all news</a></p>
+</section>
+
+<script>
+// Dynamically fetch and show top 5 news from news.html
+fetch('news.html')
+  .then(response => response.text())
+  .then(data => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(data, 'text/html');
+    const newsItems = doc.querySelectorAll('.news-list li');
+    const newsList = document.getElementById('news-list');
+
+    newsItems.forEach((item, index) => {
+      if (index < 5) {
+        newsList.appendChild(item.cloneNode(true));
+      }
+    });
+  })
+  .catch(error => console.error('Error loading news:', error));
+</script>
+
+
 <footer>
   <p style="font-size: 0.8rem;">&copy; 2025 Md Abdullah-Al Kaiser</p>
 </footer>
