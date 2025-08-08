@@ -204,23 +204,17 @@ section {
 
 .figure-text-row {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem; /* added for consistent spacing */
+  align-items: flex-start; /* top-align image with text */
+  gap: 1rem; /* space between image and text */
 }
 
 .figure-text-row img {
-  width: 100%;
-  max-width: 600px; /* adjust as you like */
+  max-width: 300px; /* control image size */
   height: auto;
-  flex-shrink: 0;
 }
 
-.figure-text-row p {
-  flex: 1;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0; /* remove paragraph default margin inside figure-text-row */
+.figure-text-row .text-block {
+  display: flex;
+  flex-direction: column; /* stack paragraphs vertically */
+  gap: 1rem;
 }
