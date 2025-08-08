@@ -279,9 +279,11 @@ a:visited {
 }
 
 .news-section ul {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
   margin-left: 0;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .news-section li {
@@ -291,6 +293,10 @@ a:visited {
 .news-section a {
   text-decoration: none;
   color: #004466;
+}
+
+.news-section a:hover {
+  text-decoration: underline;
 }
 
 
