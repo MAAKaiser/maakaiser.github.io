@@ -282,12 +282,16 @@ a:visited {
 
 .news-section {
   margin-top: 20px;
-  padding-left: 20px;  /* aligns with profile text */
-  max-width: 1200px;    /* prevents over-stretching */
+  padding-left: 0;      /* remove left padding */
+  margin-left: -10px;   /* nudge left */
+  max-width: 1200px;
 }
 
 .news-section h2 {
-  margin-bottom: 10px;
+  display: inline-block;
+  border-bottom: 2px solid #001122;
+  padding-bottom: 0.3rem;
+  padding-right: 20px;  /* extends underline rightwards */
 }
 
 .news-section ul {
