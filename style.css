@@ -108,7 +108,7 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #001122;
+  color: #004466;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.95rem;
@@ -139,7 +139,7 @@ header {
 .profile-text p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #444444;
+  color: #004466;
 }
 
 /* FOOTER */
@@ -185,7 +185,7 @@ h2 {
 /* HIGHLIGHT AUTHOR NAME IN PUBLICATIONS */
 .content-container ol li strong,
 .content-wrapper ol li strong {
-  color: #001122;
+  color: #004466;
 }
 
 /* GENERAL PAGE WRAPPER FOR PAGES LIKE PUBLICATIONS */
