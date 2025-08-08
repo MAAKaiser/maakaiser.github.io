@@ -246,51 +246,6 @@ a:visited {
   color: #004466;
 }
 
-/* --- News page specific styles --- */
 
-main.news-page {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
-
-.news-list {
-  list-style: none;
-  padding-left: 0;
-  border-top: 2px solid #C5050C;
-}
-
-.news-list li {
-  border-bottom: 1px solid #ddd;
-  padding: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.news-date {
-  color: #777;
-  font-size: 0.9rem;
-  margin-bottom: 0.4rem;
-  font-weight: 600;
-}
-
-.news-title {
-  font-size: 1.2rem;
-  color: #006d6d;
-  margin-bottom: 0.3rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.news-title:hover {
-  text-decoration: underline;
-}
-
-.news-description {
-  color: #333;
-  font-size: 1rem;
-  line-height: 1.4;
-  max-width: 95%;
-}
 
 
