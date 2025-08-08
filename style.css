@@ -238,7 +238,7 @@ a {
 
 /* On hover, make it stand out */
 a:hover {
-  color: #000;                        /* pure black on hover */
+  color: #000000;                        /* pure black on hover */
   text-decoration: underline;         /* underline only on hover */
 }
 
