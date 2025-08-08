@@ -41,33 +41,6 @@
     </p>
   </section>
 
-<!-- Neuromorphic-In-Pixel Computing -->
-<section style="margin-top: 3rem;">
-  <h2>Neuromorphic-In-Pixel Computing</h2>
-  <div class="figure-text-row">
-    <img src="Images/fig_p2m.png" alt="Neuromorphic In-Pixel Diagram">
-    <div class="text-block">
-    <p> Modern vision systems use separate sensors and processors, causing energy and latency overheads that hinder real-time performance and scalability, 
-      especially in edge AI with tight power and area constraints. 
-    </p> 
-      <p> We propose a hybrid CMOS+X neuromorphic processing-in-pixel-in-memory architecture integrating domain-wall magnetic tunnel junctions (MDW-MTJs) with CMOS transistors.
-        This enables massively parallel, asynchronous in-pixel spiking CNN processing via event-driven multiply-accumulate operations. Weights are encoded using MDW-MTJ resistance 
-        states and transistor geometry, allowing programmable thresholds, long integration times, and energy-efficient computation. A 3D-stacked layout with fine-pitch Cu-Cu bonding
-        achieves dense vertical integration without area overhead. 
-      </p> 
-      <p> This architecture offers scalable and energy-efficient in-sensor computing with performance approaching state-of-the-art neuromorphic benchmarks, 
-        while lowering backend energy requirements by upwards of 45%.
-      </p>
-      <p>
-        For more details on the architecture, implementation, and evaluations, please refer to our published papers in 
-        <a href="https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2023.1144301/full" target="_blank" rel="noopener"><strong>Frontiers (2023)</strong></a>, 
-        <a href="https://dl.acm.org/doi/abs/10.1145/3649329.3657359" target="_blank" rel="noopener"><strong>DAC (2024)</strong></a>, and 
-        <a href="https://ieeexplore.ieee.org/abstract/document/10447753" target="_blank" rel="noopener"><strong>ICASSP (2024)</strong></a>.
-      </p>
-    </div>
-  </div>
-</section>
-
 <!-- Photonic In-Memory Computing -->
 <section style="margin-top: 3rem;">
   <h2>Photonic In-Memory Computing</h2>
@@ -93,6 +66,58 @@
         <a href="https://arxiv.org/abs/2506.22705" target="_blank" rel="noopener"><strong>DAC (2025)</strong></a>,
         <a href="https://arxiv.org/abs/2506.22707" target="_blank" rel="noopener"><strong>ASAP (2025)</strong></a>, and
         <a href="https://arxiv.org/abs/2503.19544" target="_blank" rel="noopener"><strong>arXiv (2025)</strong></a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Neuromorphic-In-Pixel Computing -->
+<section style="margin-top: 3rem;">
+  <h2>Neuromorphic-In-Pixel Computing</h2>
+  <div class="figure-text-row">
+    <img src="Images/fig_p2m.png" alt="Neuromorphic In-Pixel Diagram">
+    <div class="text-block">
+      <p> Modern vision systems use separate sensors and processors, causing energy and latency overheads that hinder real-time performance and scalability, 
+        especially in edge AI with tight power and area constraints. 
+      </p> 
+      <p> We propose a hybrid CMOS+X neuromorphic processing-in-pixel-in-memory architecture integrating domain-wall magnetic tunnel junctions (MDW-MTJs) with CMOS transistors.
+        This enables massively parallel, asynchronous in-pixel spiking CNN processing via event-driven multiply-accumulate operations. Weights are encoded using MDW-MTJ resistance 
+        states and transistor geometry, allowing programmable thresholds, long integration times, and energy-efficient computation. A 3D-stacked layout with fine-pitch Cu-Cu bonding
+        achieves dense vertical integration without area overhead. 
+      </p> 
+      <p> This architecture offers scalable and energy-efficient in-sensor computing with performance approaching state-of-the-art neuromorphic benchmarks, 
+        while lowering backend energy requirements by upwards of 45%.
+      </p>
+      <p>
+        For more details on the architecture, implementation, and evaluations, please refer to our published papers in 
+        <a href="https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2023.1144301/full" target="_blank" rel="noopener"><strong>Frontiers (2023)</strong></a>, 
+        <a href="https://dl.acm.org/doi/abs/10.1145/3649329.3657359" target="_blank" rel="noopener"><strong>DAC (2024)</strong></a>, and 
+        <a href="https://ieeexplore.ieee.org/abstract/document/10447753" target="_blank" rel="noopener"><strong>ICASSP (2024)</strong></a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- APS In-Pixel Computing -->
+<section style="margin-top: 3rem;">
+  <h2>Neuromorphic-In-Pixel Computing</h2>
+  <div class="figure-text-row">
+    <img src="Images/fig_aps_p2m.png" alt="APS In-Pixel Diagram">
+    <div class="text-block">
+      <p> The growing data rates of image sensors drive the need for energy- and bandwidth-efficient vision processing at the edge. 
+        Processing-in-pixel replaces raw data readout with sparse binary feature activations, reducing downstream bandwidth and energy cost. 
+      </p> 
+      <p> We propose an ADC-less in-pixel binary activation neural network architecture using voltage-controlled magnetic tunnel junctions (VC-MTJs) 
+        for multiply-and-threshold operations. A global shutter burst-read scheme enables fast, disturbance-free access, while hardware-aware training 
+        with Hoyer regularization preserves accuracy under device and circuit constraints. 
+      </p> 
+      <p> Fabricated VC-MTJs demonstrate sub-nanosecond, low-voltage switching, enabling 5.04 TOPS/W efficiency and a 6× bandwidth reduction 
+        on CIFAR-10 and ImageNet without accuracy loss utilizing GlobalFoundris' 22nm node. 
+      </p>
+      <p>
+        For more details on the architecture, implementation, and evaluations, please refer to our published papers in 
+        <a href="https://www.nature.com/articles/s44335-025-00029-1" target="_blank" rel="noopener"><strong>npj Unconventional Computing (2025)</strong></a>, and
+        <a href="https://dl.acm.org/doi/abs/10.1145/3583781.3590235" target="_blank" rel="noopener"><strong>GLSVLSI (2023)</strong></a>.
       </p>
     </div>
   </div>
