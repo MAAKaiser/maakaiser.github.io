@@ -67,18 +67,38 @@
   </div>
 </section>
 
-
-
 <!-- Photonic In-Memory Computing -->
 <section style="margin-top: 3rem;">
   <h2>Photonic In-Memory Computing</h2>
-  <img src="Images/fig_photonic.png" alt="Photonic In-Memory Computing Diagram" style="width:100%; max-width:600px; margin:1rem 0; display:block;">
-  <p>
-    In this project, we develop a photonic tensor core leveraging a mixed-signal photonic SRAM array. The architecture fuses analog photonic processing with novel electro-optic ADC techniques to enable high-speed, energy-efficient computing.
-    Our system supports scalable tensor decomposition and convolution operations while drastically reducing memory bottlenecks typical in traditional von Neumann architectures. 
-    This work enables photonic accelerators for data-intensive AI workloads in high-throughput environments such as datacenters and optical networks.
-  </p>
+  <div class="figure-text-row">
+    <img src="Images/fig_photonic.png" alt="Photonic Tensor Core Architecture">
+    <div class="text-block">
+      <p>
+        Traditional von Neumann architectures face fundamental challenges due to continuous data movement between memory and processing units,
+        leading to significant latency and power inefficiencies. These issues worsen with technology scaling, as electrical interconnect resistance and
+        capacitance increase, constraining the performance and energy efficiency needed for emerging AI, IoT, and ML applications.
+      </p>
+      <p>
+        To address these limitations, we propose a novel differential photonic SRAM (pSRAM) bitcell-augmented, scalable mixed-signal multi-bit photonic tensor core.
+        This architecture integrates electro-optic memory with ultra-fast matrix multiplication capabilities using fabrication-friendly integrated photonic components.
+        Complementing this, our innovative 1-hot encoding electrooptic analog-to-digital converter (eoADC) converts analog photonic multiplication outputs into digital bitstreams,
+        enabling efficient processing in the electrical domain.
+      </p>
+      <p>
+        Implemented using GlobalFoundries’ monolithic 45SPCLO technology, our photonic tensor core achieves computation speeds of 4.10 tera-operations per second (TOPS)
+        with power efficiency of 3.02 TOPS/W. The eoADC operates at 8 GS/s while consuming only 2.32 pJ per conversion, and the pSRAM bitcell supports memory updates at 20 GHz,
+        facilitating high-throughput, energy-efficient processing for large-scale datasets.
+      </p>
+      <p>
+        For a deeper dive into the design, experimental validations, and detailed performance metrics, please refer to our key publications in
+        <a href="https://arxiv.org/abs/2506.22705" target="_blank" rel="noopener"><strong>DAC (2025)</strong></a>,
+        <a href="https://arxiv.org/abs/2506.22707" target="_blank" rel="noopener"><strong>ASAP (2025)</strong></a>, and
+        <a href="https://arxiv.org/abs/2503.19544" target="_blank" rel="noopener"><strong>arXiv (2025)</strong></a>.
+      </p>
+    </div>
+  </div>
 </section>
+
 
 </main>
 
