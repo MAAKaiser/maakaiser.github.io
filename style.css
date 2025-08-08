@@ -225,8 +225,8 @@ section {
 }
 
 .figure-text-row .text-block p {
-  margin-top: 0.20rem;   /* space above each paragraph */
-  margin-bottom: 0.20rem; /* space below each paragraph */
+  margin-top: 0.05rem;   /* space above each paragraph */
+  margin-bottom: 0.05rem; /* space below each paragraph */
   line-height: 1.5;      /* controls spacing between lines */
 }
 
