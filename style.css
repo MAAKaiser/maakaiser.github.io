@@ -211,7 +211,7 @@ section {
 
 .figure-text-row img {
   flex-shrink: 0; /* prevent image from shrinking too much */
-  max-width: 500px; /* controls image size */
+  max-width: 800px; /* controls image size */
   width: 100%;
   height: auto;
 }
