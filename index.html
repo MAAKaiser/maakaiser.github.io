@@ -23,6 +23,9 @@
       white-space: nowrap;
       overflow: hidden;
       display: inline-block;
+
+      /* 👇 Reserve space so layout doesn’t jump */
+      min-width: 20ch; /* approx width of full name */
     }
 
     .cursor {
@@ -120,7 +123,7 @@
 </section>
   
 <script>
-// Name typing animation with instant clear
+// Name typing animation with instant clear (no layout jump)
 const text = "Md Abdullah-Al Kaiser";
 const typewriter = document.getElementById("typewriter");
 const cursor = document.getElementById("cursor");
