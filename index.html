@@ -22,8 +22,19 @@
       font-family: "Courier New", monospace;
       white-space: nowrap;
       overflow: hidden;
-      border-right: 2px solid #333;
       display: inline-block;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 2px;
+      background-color: #333;
+      margin-left: 2px;
+      animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+      50% { background-color: transparent; }
     }
   </style>
 </head>
@@ -62,7 +73,7 @@
 
   <div class="profile-right">
     <!-- animated name -->
-    <h1 class="typewriter" id="typewriter"></h1>
+    <h1 class="typewriter" id="typewriter"></h1><span id="cursor" class="cursor"></span>
 
     <p>
       I am a Ph.D. candidate in the 
@@ -89,7 +100,7 @@
       alongside the <span style="color: #004466;"><strong>USC Annenberg Graduate Fellowship</strong></span> (2019–2023). 
     </p>
     <p>
-      I have authored 25+ peer-reviewed publications in leading venues such as the 
+      I have authored 20+ peer-reviewed publications in leading venues such as the 
       Design Automation Conference (DAC), npj Unconventional Computing, npj 2D Materials and Applications, Frontiers, ICASSP, GLVLSI, and others.
     </p>
     <p>
@@ -109,31 +120,27 @@
 </section>
   
 <script>
-// Name typing animation with loop
+// Name typing animation with instant clear
 const text = "Md Abdullah-Al Kaiser";
 const typewriter = document.getElementById("typewriter");
+const cursor = document.getElementById("cursor");
 
 let index = 0;
-let isDeleting = false;
 
 function type() {
-  if (!isDeleting && index <= text.length) {
-    typewriter.textContent = text.slice(0, index++);
-  } else if (isDeleting && index >= 0) {
-    typewriter.textContent = text.slice(0, index--);
+  if (index < text.length) {
+    typewriter.textContent += text.charAt(index);
+    index++;
+    setTimeout(type, 150); // typing speed
+  } else {
+    cursor.style.display = "none"; // hide cursor after typing complete
+    setTimeout(() => {
+      typewriter.textContent = ""; // clear instantly
+      cursor.style.display = "inline-block"; // show cursor again
+      index = 0;
+      setTimeout(type, 500); // wait 0.5s then start typing again
+    }, 3000); // wait 3s before clearing
   }
-
-  let speed = isDeleting ? 50 : 150;
-
-  if (index === text.length + 1) {
-    isDeleting = true;
-    speed = 2000; // pause before deleting
-  } else if (index < 0) {
-    isDeleting = false;
-    speed = 500; // pause before typing again
-  }
-
-  setTimeout(type, speed);
 }
 
 type();
