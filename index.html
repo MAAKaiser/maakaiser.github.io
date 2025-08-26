@@ -14,25 +14,16 @@
   /> 
 
   <style>
-    /* Name animation */
+    /* Name typing effect */
     .typewriter {
-      overflow: hidden;
-      border-right: .15em solid #333;
-      white-space: nowrap;
-      letter-spacing: .05em;
-      animation: typing 3s steps(30, end), blink .75s step-end infinite;
       font-size: 2.2rem;
       font-weight: bold;
       color: #222;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent }
+      font-family: "Courier New", monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #333;
+      display: inline-block;
     }
   </style>
 </head>
@@ -71,7 +62,7 @@
 
   <div class="profile-right">
     <!-- animated name -->
-    <h1 class="typewriter">Md Abdullah-Al Kaiser</h1>
+    <h1 class="typewriter" id="typewriter"></h1>
 
     <p>
       I am a Ph.D. candidate in the 
@@ -98,7 +89,7 @@
       alongside the <span style="color: #004466;"><strong>USC Annenberg Graduate Fellowship</strong></span> (2019–2023). 
     </p>
     <p>
-      I have authored 20+ peer-reviewed publications in leading venues such as the 
+      I have authored 25+ peer-reviewed publications in leading venues such as the 
       Design Automation Conference (DAC), npj Unconventional Computing, npj 2D Materials and Applications, Frontiers, ICASSP, GLVLSI, and others.
     </p>
     <p>
@@ -117,6 +108,37 @@
   <p><a href="news.html">See all news</a></p>
 </section>
   
+<script>
+// Name typing animation with loop
+const text = "Md Abdullah-Al Kaiser";
+const typewriter = document.getElementById("typewriter");
+
+let index = 0;
+let isDeleting = false;
+
+function type() {
+  if (!isDeleting && index <= text.length) {
+    typewriter.textContent = text.slice(0, index++);
+  } else if (isDeleting && index >= 0) {
+    typewriter.textContent = text.slice(0, index--);
+  }
+
+  let speed = isDeleting ? 50 : 150;
+
+  if (index === text.length + 1) {
+    isDeleting = true;
+    speed = 2000; // pause before deleting
+  } else if (index < 0) {
+    isDeleting = false;
+    speed = 500; // pause before typing again
+  }
+
+  setTimeout(type, speed);
+}
+
+type();
+</script>
+
 <script>
 // Dynamically fetch and show top 5 news from news.html
 fetch('news.html')
