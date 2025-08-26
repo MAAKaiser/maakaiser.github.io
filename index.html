@@ -14,18 +14,15 @@
   /> 
 
   <style>
-    /* Name typing effect */
+    /* Typewriter Animation */
     .typewriter {
       font-size: 2.2rem;
       font-weight: bold;
       color: #222;
       font-family: "Courier New", monospace;
       white-space: nowrap;
-      overflow: hidden;
       display: inline-block;
-
-      /* 👇 Reserve space so layout doesn’t jump */
-      min-width: 20ch; /* approx width of full name */
+      height: 2.6rem; /* keeps spacing fixed */
     }
 
     .cursor {
@@ -75,8 +72,8 @@
   </div>
 
   <div class="profile-right">
-    <!-- animated name -->
-    <h1 class="typewriter" id="typewriter"></h1><span id="cursor" class="cursor"></span>
+    <!-- Animated Name -->
+    <h1 class="typewriter"><span id="typewriter"></span><span id="cursor" class="cursor"></span></h1>
 
     <p>
       I am a Ph.D. candidate in the 
@@ -123,7 +120,7 @@
 </section>
   
 <script>
-// Name typing animation with instant clear (no layout jump)
+// Typewriter animation
 const text = "Md Abdullah-Al Kaiser";
 const typewriter = document.getElementById("typewriter");
 const cursor = document.getElementById("cursor");
@@ -147,9 +144,7 @@ function type() {
 }
 
 type();
-</script>
 
-<script>
 // Dynamically fetch and show top 5 news from news.html
 fetch('news.html')
   .then(response => response.text())
